@@ -3,14 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>modern cars website in 2025</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-    <div class="box">
-        <div class="cirlce">
-            <div class="smallcircle"></div>
-        </div>
+    <section>
+        <div class="circel"></div>
+<header>
+<body>
+<a href="#" ><img src="mm-removebg-preview.png" alt="hello" class="logo"></a>
+<div class="icon">
+<i class="fa fa-bars"onclick="togg()" ></i>
+</div>
+<ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Order </a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+
+</header>
+<div class="content">
+<div class="textbox">
+    <h2>It's not Just Cars <br>It's <span class="span">Our Passion</span>
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum,The Developer Name is Wasim Alam consectetur eos esse autem impedit fugiat sunt expedita sit, beatae nisi sequi eum laboriosam itaque  veniam modi.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quasi.
+    </p>
+    <a href="#" onclick="ravi()">Book Ride</a>
+</div>
+    <div class="imgbox">
+        <img src="car2.png" alt="" class="one">
     </div>
+</div>
+
+<ul class="thumb">
+<li><img src="car2.png" onclick="imgslide('car2.png');changecolor('#017143')" ></li>
+<li><img src="card4.png" onclick="imgslide('card4.png');changecolor('red')"></li>
+<li><img src="card5.png" onclick="imgslide('card5.png');changecolor('#63aecc')"></li>
+</ul>
+
+<ul class="sci">
+<li><i class="fa fa-facebook"></i></li>
+<li><i class="fa fa-instagram"></i></li>
+<li><i class="fa fa-apple"></i></li>
+</ul>
+    </section>
+    <!--New Cards Effects Using Html css ------------------->
+<div class="cardsbox">
+<div class="cards">
+    <div class="circle"></div>
+    <div class="content">
+<h2>pipsi cans zero suger</h2>
+<p>Indian badminton star PV Sindhu tied the knot with Hyderabad-based businessman Venkata Datta Sai in a private ceremony in Udaipur on December </p>
+<a href="#">buy Now</a>
+    </div>
+    <img src="pip_cans-removebg-preview.png" alt="">
+</div>
+</div>
+
+
+
+
+
+
+    <script>
+        function imgslide (anything){
+document.querySelector(".one").src = anything;
+pp = document.querySelector(".span");
+pp.innerHTML="Our Lifeline"
+}
+
+function changecolor (color){
+const circel = document.querySelector(".circel")
+circel.style.background = color;
+    }
+
+
+var hello = document.querySelector("header")
+var hi = document.querySelector(".logo")
+
+hello.addEventListener("mousemove",function(deta){
+hi.style.left = deta.x+'px'
+hi.style.top = deta.y+'px'
+})
+
+hello.addEventListener("mouseleave",function(deta){
+    hi.style.left = '0px'
+    hi.style.top ='0px'
+    
+    })
+    
+    function togg(){
+var menu = document.querySelector(".navbar");
+menu.classList.toggle("open")
+
+    }
+
+function ravi(){
+prompt("Please Enter a date for ride")
+
+}
+
+    </script>
 </body>
 </html>
